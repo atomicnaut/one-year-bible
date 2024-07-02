@@ -385,6 +385,10 @@ nav .login:hover {
 }
 
 @media (max-width: 1024px) {
+	#about {
+		padding: 5rem 3rem;
+	}
+
 	#about .about-content h3 {
 		font-size: 1rem;
 	}
@@ -410,10 +414,15 @@ nav .login:hover {
 	grid-template-columns: repeat(2, 1fr);
 	place-items: center;
 	padding: 10rem 3rem;
+	width: 80%;
 }
 
 #features .feature-content {
 	width: 70%;
+}
+
+#features .feature-content:nth-of-type(even) {
+	text-align: right;
 }
 
 #features .feature-content h2 {
@@ -445,7 +454,7 @@ nav .login:hover {
 }
 
 #features .feature-image img {
-	height: 25rem;
+	height: 20rem;
 }
 
 #features .feature-divider {
@@ -491,6 +500,53 @@ nav .login:hover {
 	fill: #e5e7eb;
 }
 
+@media (max-width: 1024px) {
+	#features .feature {
+		padding: 7rem 3rem;
+	}
+
+	#features .feature-content {
+		width: 100%;
+	}
+
+	#features .feature-content h2 {
+		font-size: 1.5rem;
+	}
+
+	#features .feature-content p {
+		font-size: 0.9rem;
+	}
+
+	#features .feature-content button {
+		font-size: 0.9rem;
+		padding: 0.5rem 1rem;
+	}
+
+	#features .feature-image img {
+		height: 10rem;
+	}
+}
+
+@media (max-width: 768px) {
+	#features .feature {
+		grid-template-columns: 1fr;
+		width: 100%;
+		gap: 1rem;
+	}
+
+	#features .feature-content {
+		width: 100%;
+		text-align: center;
+		order: 2;
+	}
+
+	#features .feature-content:nth-of-type(even) {
+		width: 100%;
+		text-align: center;
+		order: 2;
+	}
+}
+
 /* Read */
 #read {
 	position: relative;
@@ -509,6 +565,14 @@ nav .login:hover {
 #watch {
 	transition: opacity 1s;
 	opacity: 0.2;
+}
+
+@media (max-width: 1024px) {
+	#read,
+	#listen,
+	#watch {
+		opacity: 1;
+	}
 }
 
 /* App */
@@ -554,7 +618,7 @@ nav .login:hover {
 }
 
 #app .app img {
-	width: 40%;
+	width: 50%;
 	height: auto;
 }
 
@@ -587,6 +651,48 @@ nav .login:hover {
 
 #app .app-content button:hover {
 	opacity: 1;
+}
+
+@media (max-width: 1024px) {
+	#app {
+		padding: 5rem 3rem;
+	}
+
+	#app .app {
+		width: 100%;
+	}
+
+	#app .app img {
+		width: 50%;
+	}
+
+	#app .app-content h4 {
+		font-size: 1.25rem;
+	}
+
+	#app .app-content p {
+		font-size: 0.9rem;
+	}
+
+	#app .app-content button {
+		padding: 0.5rem 1rem;
+		font-size: 1rem;
+	}
+}
+
+@media (max-width: 768px) {
+	#app {
+		padding: 3rem 3rem;
+	}
+
+	#app .app {
+		grid-template-columns: 1fr;
+		gap: 2rem;
+	}
+
+	#app .app img {
+		width: 30%;
+	}
 }
 
 /* Footer */
@@ -739,4 +845,10 @@ footer .donate button i {
 
 footer .donate button:hover {
 	opacity: 0.9;
+}
+
+@media (max-width: 1024px) {
+}
+
+@media (max-width: 768px) {
 }

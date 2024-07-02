@@ -13,8 +13,8 @@ const height = 100;
 const read = document.querySelector("#read");
 const listen = document.querySelector("#listen");
 const watch = document.querySelector("#watch");
-const read_height = read.offsetTop - 100;
-const listen_height = listen.offsetTop - 100;
+const read_height = read.offsetTop;
+const listen_height = listen.offsetTop;
 const watch_height = watch.offsetTop - 100;
 
 // Onscroll Function
