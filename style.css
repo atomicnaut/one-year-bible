@@ -402,6 +402,18 @@ nav .login:hover {
 	#about .about {
 		grid-template-columns: 1fr;
 	}
+
+	#about .about-content:nth-of-type(2) {
+		margin-block: 3rem;
+	}
+
+	#about .about-content img {
+		margin-bottom: 0.25rem;
+	}
+
+	#about .about-content h3 {
+		margin-bottom: 0.25rem;
+	}
 }
 
 /* Features */
@@ -728,7 +740,7 @@ footer .footer-divider .shape-fill {
 
 footer .footer-top {
 	display: grid;
-	grid-template-columns: 2fr 1fr 1fr;
+	grid-template-columns: 1fr 1fr;
 	justify-items: end;
 	align-items: center;
 	color: var(--text-primary);
@@ -753,6 +765,13 @@ footer .footer-desc {
 	font-size: 1.125rem;
 	line-height: 1.25;
 	font-weight: 300;
+}
+
+footer .footer-link-section {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	gap: 3rem;
+	place-items: center;
 }
 
 footer .footer-links {
@@ -847,8 +866,132 @@ footer .donate button:hover {
 	opacity: 0.9;
 }
 
+.copyright {
+	margin-right: 2rem;
+}
+
 @media (max-width: 1024px) {
+	footer {
+		padding: 9rem 3rem 3rem;
+	}
+
+	footer .footer-logo {
+		gap: 0.75rem;
+		font-size: 1.3rem;
+	}
+
+	footer .footer-desc {
+		margin-top: 0.5rem;
+		font-size: 0.9rem;
+	}
+
+	footer .footer-links h6 {
+		font-size: 0.9rem;
+		margin-bottom: 0.75rem;
+	}
+
+	footer .footer-links li {
+		margin-bottom: 0.25rem;
+		font-size: 0.8rem;
+	}
+
+	footer .footer-hr {
+		margin: 3rem auto;
+		height: 0.15rem;
+	}
+
+	footer .socials a {
+		font-size: 1.5rem;
+	}
+
+	footer .socials a:nth-of-type(2) {
+		margin-inline: 0.5rem;
+	}
+
+	footer .donate h5 {
+		font-size: 0.95rem;
+	}
+
+	footer .donate p {
+		font-size: 0.75rem;
+		margin-top: 0.3rem;
+		margin-bottom: 0.5rem;
+	}
+
+	footer .donate button {
+		padding: 0.35rem 0.7rem;
+		font-size: 0.8rem;
+	}
+
+	footer .donate button i {
+		margin-left: 0.5rem;
+	}
+
+	.copyright {
+		font-size: 0.7rem;
+		margin-right: 2rem;
+	}
 }
 
 @media (max-width: 768px) {
+	footer {
+		padding: 9rem 3rem 3rem;
+	}
+
+	footer .footer-top {
+		grid-template-columns: 1fr;
+		place-items: center;
+		width: 100%;
+		gap: 3rem;
+	}
+
+	footer .footer-logo {
+		justify-content: center;
+	}
+
+	footer .footer-desc {
+		margin-top: 0.25rem;
+		text-align: center;
+	}
+
+	footer .footer-link-section {
+		gap: 2rem;
+	}
+
+	footer .footer-bottom {
+		grid-template-columns: 1fr;
+		gap: 3rem;
+	}
+
+	footer .donate {
+		order: -1;
+	}
+
+	footer .donate h5 {
+		font-size: 0.95rem;
+	}
+
+	footer .donate p {
+		font-size: 0.75rem;
+		width: 80%;
+		margin-inline: auto;
+	}
+
+	footer .donate button {
+		padding: 0.3rem 0.6rem;
+		font-size: 0.75rem;
+	}
+
+	footer .socials a {
+		font-size: 1.75rem;
+	}
+
+	footer .socials a:nth-of-type(2) {
+		margin-inline: 0.75rem;
+	}
+
+	.copyright {
+		font-size: 0.9rem;
+		margin-inline: auto;
+	}
 }
