@@ -129,10 +129,6 @@ nav .header-logo {
 	font-size: 1.25rem;
 }
 
-nav .header-logo i:nth-of-type(2) {
-	padding-inline: 0.2rem;
-}
-
 nav .nav-links {
 	display: flex;
 	justify-content: center;
@@ -464,7 +460,7 @@ nav .login:hover {
 }
 
 #features .feature-content button:hover,
-#features .feature-content a:hover  {
+#features .feature-content a:hover {
 	opacity: 1;
 }
 
@@ -565,20 +561,20 @@ nav .login:hover {
 /* Read */
 #read {
 	position: relative;
-	transition: opacity 1s;
+	transition: opacity 300ms;
 	opacity: 0.2;
 }
 
 /* Listen */
 #listen {
 	position: relative;
-	transition: opacity 1s;
+	transition: opacity 300ms;
 	opacity: 0.2;
 }
 
 /* Watch */
 #watch {
-	transition: opacity 1s;
+	transition: opacity 300ms;
 	opacity: 0.2;
 }
 
